@@ -20,6 +20,10 @@ public class Humain {
 		return nbArgent;
 	}
 	
+	public void setNbArgent(int prix) {
+		nbArgent += prix;
+	}
+	
 	public void parler(String texte) {
 		System.out.println(nom + ": \"" + texte + "\"");
 	}
