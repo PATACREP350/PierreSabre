@@ -4,9 +4,9 @@ public class Humain {
 	private String nom;
 	private String boissonFav;
 	private int nbArgent;
-	private int nbConnaissance = 0;
+	protected int nbConnaissance = 0;
 	private int nbConnaissancemax = 30;
-	private Humain[] listConnaissance = new Humain[nbConnaissancemax];
+	protected Humain[] listConnaissance = new Humain[nbConnaissancemax];
 
 	public Humain(String nom, String boissonFav, int nbArgent) {
 		super();
@@ -18,12 +18,12 @@ public class Humain {
 	public String getNom() {
 		return nom;
 	}
-
+	
 	public int getNbArgent() {
 		return nbArgent;
 	}
 	
-	public void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println(nom + ": \"" + texte + "\"");
 	}
 	
@@ -35,11 +35,11 @@ public class Humain {
 		parler("Mmmm, un bon verre de " + boissonFav + "! GLOUPS !");
 	}
 	
-	public void gagnerArgent(int montant) {
+	protected void gagnerArgent(int montant) {
 		nbArgent += montant;
 	}
 	
-	public void perdreArgent(int montant) {
+	protected void perdreArgent(int montant) {
 		nbArgent -= montant;
 	}
 	
@@ -83,6 +83,4 @@ public class Humain {
 	public static void main(String[] args) {
 		
 	}
-
-
 }

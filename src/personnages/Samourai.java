@@ -13,6 +13,11 @@ public class Samourai extends Ronin{
 		super.direBonjour();
 		parler("Je suis fier de servir le seigneur " + seigneur);
 	}
+	
+	//surcharge
+	public void boire(String boisson) {
+		parler("Qu'est-ce que je vais choisir comme boisson ? Tiens je vais prendre du " + boisson + ".");
+	}
 
 	public static void main(String[] args) {
 		
