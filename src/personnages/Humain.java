@@ -73,10 +73,11 @@ public class Humain {
 	}
 	
 	public void listerConnaissance() {
-		System.out.println(" Je connais beaucoup de monde dont : ");
+		String texte = " Je connais beaucoup de monde dont : ";
 		for(int i=0;i<nbConnaissance;i++) {
-			System.out.println( listConnaissance[i].getNom() + ", ");
+			texte = listConnaissance[i].getNom() + " ";
 		}
+		parler(texte);
 	}
 	
 	public static void main(String[] args) {
