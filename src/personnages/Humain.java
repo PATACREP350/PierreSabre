@@ -66,9 +66,9 @@ public class Humain {
 	}
 	
 	public void faireConnaissanceAvec(Humain humain) {
-		this.direBonjour();
+		direBonjour();
 		humain.direBonjour();
-		this.connaitre(humain);
+		connaitre(humain);
 		humain.connaitre(this);
 	}
 	
